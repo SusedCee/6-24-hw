@@ -177,19 +177,45 @@ const bondFilms = [
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 
-//5. Create a new array called bondTitles with only the titles of the Bond films, and console.log the new array.
+//5. Create a new array called bondTitles with only 
+//the titles of the Bond films, and console.log the
+// new array.
 
-bondFilms.push({ "bondTitles" : ["Skyfall", "Thunderball", "Goldfinger", "Live and Let Die", "You Only Live Twice", "The Spy Who Loved Me", "Casino Royale", "Moonraker", "Diamonds Are Forever", "Quantum of Solace", "From Russia with Love", "Die Another Day", "Goldeneye", "On Her Majesty's Secret Service", "The World is Not Enough", "For Your Eyes Only", "Tomorrow Never Dies", "The Man with the Golden Gun", "Dr. No", "Octopussy", "The Living Daylights", "A View to a Kill", "License to Kill"] });
-console.log(bondFilms[23]);
+// bondFilms.push({ "bondTitles" : ["Skyfall", "Thunderball", "Goldfinger", "Live and Let Die", "You Only Live Twice", "The Spy Who Loved Me", "Casino Royale", "Moonraker", "Diamonds Are Forever", "Quantum of Solace", "From Russia with Love", "Die Another Day", "Goldeneye", "On Her Majesty's Secret Service", "The World is Not Enough", "For Your Eyes Only", "Tomorrow Never Dies", "The Man with the Golden Gun", "Dr. No", "Octopussy", "The Living Daylights", "A View to a Kill", "License to Kill"] });
+// console.log(bondFilms[23]);
 
-//6. 
+// const findTheTitles = () => {
+// 	let bondTitle = []
+// 	for (i = 0; i < bondFilms.length; i++){
+// 	bondTitle.push(bondFilms[i]["title"])
+// //for (let bondFilms[key]["title"]);{//have to use brackets to use quotations, in this case referencing [brackets]
+// } return bondTitle
+// }
+// console.log(findTheTitles());
 
 
+//6. Create a new array oddBonds, of only the Bond
+// films released on odd-numbered years.
 
 
+// const findOddBonds = () => {
+// 	let oddBonds = []
+// 	for(i = 0; i < bondFilms.length; i++){
+// 	oddBonds.push(bondFilms[i]["year"])
+// 	} return oddBonds
+// }
+// console.log(findOddBonds());
 
 
-
+const findOddBonds = () => {
+	let oddBonds = []
+	for(i = 0; i < bondFilms.length; i++){
+		if(i%2 !== 0){
+		oddBonds.push(bondFilms[i]["year"]);
+		}
+	} return oddBonds
+}
+console.log(findOddBonds());
 
 
 
