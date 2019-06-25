@@ -197,25 +197,55 @@ const bondFilms = [
 //6. Create a new array oddBonds, of only the Bond
 // films released on odd-numbered years.
 
+const findOddBonds = () => {
+	let oddBonds = []
+	for(i = 0; i < bondFilms.length; i++){
+		if(bondFilms[i]["year"]%2 !== 0){
+		oddBonds.push(bondFilms[i]["year"])
+		}
+	} return oddBonds
+}
+console.log(findOddBonds());
 
-// const findOddBonds = () => {
-// 	let oddBonds = []
+
+
+
+// 7. Determine the total cumulative gross of the 
+// Bond franchise, and console.log the result.
+
+// alert(bondFilms["gross"].replace(/$,/g, " "));
+// console.log(bondFilms[0]);
+
+
+
+// const findTotalCumulativeGross = () => {
+// 	let cumulativeGross = []
 // 	for(i = 0; i < bondFilms.length; i++){
-// 	oddBonds.push(bondFilms[i]["year"])
+// 		if(i%2 !== 0){
+// 		oddBonds.push(bondFilms[i]["year"]);
+// 		}
 // 	} return oddBonds
 // }
 // console.log(findOddBonds());
 
 
-const findOddBonds = () => {
-	let oddBonds = []
-	for(i = 0; i < bondFilms.length; i++){
-		if(i%2 !== 0){
-		oddBonds.push(bondFilms[i]["year"]);
-		}
-	} return oddBonds
-}
-console.log(findOddBonds());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
