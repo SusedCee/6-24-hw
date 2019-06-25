@@ -197,15 +197,15 @@ const bondFilms = [
 //6. Create a new array oddBonds, of only the Bond
 // films released on odd-numbered years.
 
-const findOddBonds = () => {
-	let oddBonds = []
-	for(i = 0; i < bondFilms.length; i++){
-		if(bondFilms[i]["year"]%2 !== 0){
-		oddBonds.push(bondFilms[i]["year"])
-		}
-	} return oddBonds
-}
-console.log(findOddBonds());
+// const findOddBonds = () => {
+// 	let oddBonds = []
+// 	for(i = 0; i < bondFilms.length; i++){
+// 		if(bondFilms[i]["year"]%2 !== 0){
+// 		oddBonds.push(bondFilms[i]["year"])
+// 		}
+// 	} return oddBonds
+// }
+// console.log(findOddBonds());
 
 
 
@@ -213,17 +213,38 @@ console.log(findOddBonds());
 // 7. Determine the total cumulative gross of the 
 // Bond franchise, and console.log the result.
 
-// alert(bondFilms["gross"].replace(/$,/g, " "));
 // console.log(bondFilms[0]);
+
+// const findTotalCumulativeGross = () => {
+// 	let cumulativeGross = []
+// 	for(i = 0; i < bondFilms.length; i++){
+// 		alert(bondFilms[i]["gross"].replace(/$,/gi, " "));{
+// 		let arrSum = function(a,b){
+// 			return arr.reduce(function(a,b)){
+// 				return 
+// 			}
+// 		}
+// 			const arrSum = arr => arr.reduce(())
+
+// 			}
+// 	} return oddBonds
+// }
+// console.log(findOddBonds());
 
 
 
 // const findTotalCumulativeGross = () => {
 // 	let cumulativeGross = []
 // 	for(i = 0; i < bondFilms.length; i++){
-// 		if(i%2 !== 0){
-// 		oddBonds.push(bondFilms[i]["year"]);
+// 		alert(bondFilms[i]["gross"].replace(/$,/gi, " "));{
+// 		let arrSum = function(a,b){
+// 			return arr.reduce(function(a,b)){
+// 				return 
+// 			}
 // 		}
+// 			const arrSum = arr => arr.reduce(())
+
+// 			}
 // 	} return oddBonds
 // }
 // console.log(findOddBonds());
@@ -234,15 +255,38 @@ console.log(findOddBonds());
 
 
 
+const funcName=() => {
 
+function bondParser(str) {
+	let grossNumber = ""
+	for(let i = 0; i < str.length; i++){
+		if(strIsNum(str[i])){
+			grossNumber += str[i]
+		}
+	}
+	grossNumber = parseInt(grossNumber)
+	return grossNumber
+}
 
+function strIsNum(str){
+	const num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+	for (let i = 0; i < num.length; i++){
+		if (str === num[i]){
+			return true
+		}
+	}
+	return false
+}
 
+let sum = 0
+for(let i = 0; i < bondFilms.length; i++){
+	sum += bondParser(bondFilms[i].gross)//bondParser, accept a string and accept a number
+}
+return sum
+}
 
-
-
-
-
-
+funcName();
+console.log(funcName());
 
 
 
