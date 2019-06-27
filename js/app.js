@@ -53,103 +53,103 @@ console.log("Works!");
 
 //2. TAKE IT EASY
 
-// //1.  Make an array that holds all of the colors of the rainbow.
-// const colorsOfTheRainbow = ["red", "orange", "yellow", "green", "blue", "purple", "red", "black"]
+//1.  Make an array that holds all of the colors of the rainbow.
+const colorsOfTheRainbow = ["red", "orange", "yellow", "green", "blue", "purple", "red", "black"]
 
-// //2. Write code that will access "blue" from the rainbow array.
-// console.log(colorsOfTheRainbow[4]);
+//2. Write code that will access "blue" from the rainbow array.
+console.log(colorsOfTheRainbow[4]);
 
-// //3.  Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
-// const susedCabrera = {
-// 	favoriteFood: "Chiles Rellenos", 
-// 	hobby: "running",
-// 	city: "Denver",
-// 	favoriteDatatype: "numbers"
-// }
+//3.  Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
+const susedCabrera = {
+	favoriteFood: "Chiles Rellenos", 
+	hobby: "running",
+	city: "Denver",
+	favoriteDatatype: "numbers"
+}
 
-// //4.  Write code that will access your hobby from the object that you just created.
-// console.log(susedCabrera.favoriteFood);
+//4.  Write code that will access your hobby from the object that you just created.
+console.log(susedCabrera.favoriteFood);
 
 
 
 //3. CRAZY OBJECT!
 
-// const crazyObject = {
-//   taco: [
-//     {
-//       meat: 'steak',
-//       cheese: ['panela', 'queso', 'chihuahua']
-//     },
-//     {
-//       meat: 'chicken',
-//       salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
-//     },
-//   ],
-//   larry: {
-//     nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
-//     quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
-//     characters: [
-//       {
-//         name: "Jeff",
-//         occupation: "manager"
-//       },
-//       {
-//         name: "funkhauser",
-//         occupation: "tv dude"
-//       },
-//       {
-//         name: "susie",
-//         occupation: "jeffs wife",
-//         favoriteHobby: "Swearing at Larry and Jeff"
-//       },
-//     ]
-//   }
-// }
+const crazyObject = {
+  taco: [
+    {
+      meat: 'steak',
+      cheese: ['panela', 'queso', 'chihuahua']
+    },
+    {
+      meat: 'chicken',
+      salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
+    },
+  ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+    characters: [
+      {
+        name: "Jeff",
+        occupation: "manager"
+      },
+      {
+        name: "funkhauser",
+        occupation: "tv dude"
+      },
+      {
+        name: "susie",
+        occupation: "jeffs wife",
+        favoriteHobby: "Swearing at Larry and Jeff"
+      },
+    ]
+  }
+}
 
-// // Use crazyObject to log the following.
+// Use crazyObject to log the following.
 
-// // -"omg my mouth is burning"
-// console.log(crazyObject.taco[1].salsa[5]);
+// -"omg my mouth is burning"
+console.log(crazyObject.taco[1].salsa[5]);
 
-// // -"Pretty pretty prettayyyyy good"
-// console.log(crazyObject.larry.quotes[0]);
+// -"Pretty pretty prettayyyyy good"
+console.log(crazyObject.larry.quotes[0]);
 
-// // -"Swearing at Larry and Jeff"
-// console.log(crazyObject.larry.characters[2].favoriteHobby);
+// -"Swearing at Larry and Jeff"
+console.log(crazyObject.larry.characters[2].favoriteHobby);
 
-// // -"Chicken Teriyaki Boyyyyyy"
-// console.log(crazyObject.larry.nicknames[1]);
+// -"Chicken Teriyaki Boyyyyyy"
+console.log(crazyObject.larry.nicknames[1]);
 
-// // -The object the contains the name funkhauser
-// console.log(crazyObject.larry.characters[1]);
+// -The object the contains the name funkhauser
+console.log(crazyObject.larry.characters[1]);
 
 
 //4. OBJECT-CEPTION
 
-// const inception = {
-//    reality: {
-//        dreamLayer1: {
-//            dreamLayer2: {
-//                dreamLayer3: {
-//                    dreamLayer4: {
-//                        dreamLayer5: {
-//                            dreamLayer6: {
-//                                limbo: "Joseph Gordon Levitt"
-//                           }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-// }
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
 
-// //Change the value of limbo to null.
-// inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = "null";
-// console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo);
+//Change the value of limbo to null.
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = "null";
+console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo);
 
 
-//5. BOND FILMS
+// //5. BOND FILMS
 
 const bondFilms = [
   { "title" : "Skyfall", "year" : 2012, "actor" : "Daniel Craig", "gross" : "$1,108,561,008" },
@@ -181,78 +181,37 @@ const bondFilms = [
 //the titles of the Bond films, and console.log the
 // new array.
 
-// bondFilms.push({ "bondTitles" : ["Skyfall", "Thunderball", "Goldfinger", "Live and Let Die", "You Only Live Twice", "The Spy Who Loved Me", "Casino Royale", "Moonraker", "Diamonds Are Forever", "Quantum of Solace", "From Russia with Love", "Die Another Day", "Goldeneye", "On Her Majesty's Secret Service", "The World is Not Enough", "For Your Eyes Only", "Tomorrow Never Dies", "The Man with the Golden Gun", "Dr. No", "Octopussy", "The Living Daylights", "A View to a Kill", "License to Kill"] });
-// console.log(bondFilms[23]);
+bondFilms.push({ "bondTitles" : ["Skyfall", "Thunderball", "Goldfinger", "Live and Let Die", "You Only Live Twice", "The Spy Who Loved Me", "Casino Royale", "Moonraker", "Diamonds Are Forever", "Quantum of Solace", "From Russia with Love", "Die Another Day", "Goldeneye", "On Her Majesty's Secret Service", "The World is Not Enough", "For Your Eyes Only", "Tomorrow Never Dies", "The Man with the Golden Gun", "Dr. No", "Octopussy", "The Living Daylights", "A View to a Kill", "License to Kill"] });
+console.log(bondFilms[23]);
 
-// const findTheTitles = () => {
-// 	let bondTitle = []
-// 	for (i = 0; i < bondFilms.length; i++){
-// 	bondTitle.push(bondFilms[i]["title"])
-// //for (let bondFilms[key]["title"]);{//have to use brackets to use quotations, in this case referencing [brackets]
-// } return bondTitle
-// }
-// console.log(findTheTitles());
+const findTheTitles = () => {
+	let bondTitle = []
+	for (i = 0; i < bondFilms.length; i++){
+	bondTitle.push(bondFilms[i]["title"])
+	//for (let bondFilms[key]["title"]);{//have to use brackets to use quotations, in this case referencing [brackets]
+} return bondTitle
+}
+console.log(findTheTitles());
 
 
 //6. Create a new array oddBonds, of only the Bond
 // films released on odd-numbered years.
 
-// const findOddBonds = () => {
-// 	let oddBonds = []
-// 	for(i = 0; i < bondFilms.length; i++){
-// 		if(bondFilms[i]["year"]%2 !== 0){
-// 		oddBonds.push(bondFilms[i]["year"])
-// 		}
-// 	} return oddBonds
-// }
-// console.log(findOddBonds());
+const findOddBonds = () => {
+	let oddBonds = []
+	for(i = 0; i < bondFilms.length; i++){
+		if(bondFilms[i]["year"]%2 !== 0){
+		oddBonds.push(bondFilms[i]["year"])
+		}
+	} return oddBonds
+}
+console.log(findOddBonds());
 
 
 
 
 // 7. Determine the total cumulative gross of the 
 // Bond franchise, and console.log the result.
-
-// console.log(bondFilms[0]);
-
-// const findTotalCumulativeGross = () => {
-// 	let cumulativeGross = []
-// 	for(i = 0; i < bondFilms.length; i++){
-// 		alert(bondFilms[i]["gross"].replace(/$,/gi, " "));{
-// 		let arrSum = function(a,b){
-// 			return arr.reduce(function(a,b)){
-// 				return 
-// 			}
-// 		}
-// 			const arrSum = arr => arr.reduce(())
-
-// 			}
-// 	} return oddBonds
-// }
-// console.log(findOddBonds());
-
-
-
-// const findTotalCumulativeGross = () => {
-// 	let cumulativeGross = []
-// 	for(i = 0; i < bondFilms.length; i++){
-// 		alert(bondFilms[i]["gross"].replace(/$,/gi, " "));{
-// 		let arrSum = function(a,b){
-// 			return arr.reduce(function(a,b)){
-// 				return 
-// 			}
-// 		}
-// 			const arrSum = arr => arr.reduce(())
-
-// 			}
-// 	} return oddBonds
-// }
-// console.log(findOddBonds());
-
-
-
-
-
 
 
 const funcName=() => {
