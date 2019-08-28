@@ -226,17 +226,20 @@ function strIsNum(str){
 function bondParser(str) {
   let grossNumber = ""
   for(let i = 0; i < str.length; i++){
-    if(strIsNum(str [i])){
+    console.log(str)
+    if(strIsNum(str[i])){
       grossNumber += str[i];
     }
   }
   grossNumber = parseInt(grossNumber);
   return grossNumber;
+
 }
 
 let sum = 0
-for(let i = 0; i < bondFilms.length; i++){
-	sum += bondParser(bondFilms[i].gross);//bondParser, accept a string and accept a number
+for(let i = 0; i < bondFilms.length - 1; i++){
+	console.log("here's a gross --> " + bondFilms[i]["gross"]);
+  sum += bondParser(bondFilms[i]["gross"]);//bondParser, accept a string and accept a number
 }
 
 console.log(sum);
