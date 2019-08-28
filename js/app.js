@@ -213,51 +213,33 @@ console.log(findOddBonds());
 // 7. Determine the total cumulative gross of the 
 // Bond franchise, and console.log the result.
 
-
-const funcName=() => {
-
-function bondParser(str) {
-	let grossNumber = ""
-	for(let i = 0; i < str.length; i++){
-		if(strIsNum(str[i])){
-			grossNumber += str[i]
-		}
-	}
-	grossNumber = parseInt(grossNumber)
-	return grossNumber
-}
-
 function strIsNum(str){
-	const num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-	for (let i = 0; i < num.length; i++){
-		if (str === num[i]){
+	const nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+	for (let i = 0; i < nums.length; i++){
+		if (str === nums[i]){
 			return true
 		}
 	}
 	return false
 }
 
+function bondParser(str) {
+  let grossNumber = ""
+  for(let i = 0; i < str.length; i++){
+    if(strIsNum(str [i])){
+      grossNumber += str[i];
+    }
+  }
+  grossNumber = parseInt(grossNumber);
+  return grossNumber;
+}
+
 let sum = 0
 for(let i = 0; i < bondFilms.length; i++){
-	sum += bondParser(bondFilms[i].gross)//bondParser, accept a string and accept a number
-}
-return sum
+	sum += bondParser(bondFilms[i].gross);//bondParser, accept a string and accept a number
 }
 
-funcName();
-console.log(funcName());
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(sum);
 
 
 
